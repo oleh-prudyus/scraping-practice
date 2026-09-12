@@ -1,0 +1,7 @@
+[Unit]
+Description=Scraping practice - lesson 6 exporter
+
+[Service]
+Type=oneshot
+ExecStart=/home/user/Projects/scraping-practice/.venv/bin/python /home/user/Projects/scraping-practice/lesson_06_export_formats/scraper.py
+WorkingDirectory=/home/user/Projects/scraping-practice

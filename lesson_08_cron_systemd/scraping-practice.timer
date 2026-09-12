@@ -1,0 +1,10 @@
+[Unit]
+Description=Run scraping-practice exporter every 2 minutes (for testing)
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=2min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
