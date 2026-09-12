@@ -8,6 +8,8 @@ A FastAPI backend + React (TypeScript) frontend for controlling a scheduled scra
 
 **Stack:** FastAPI · APScheduler · SQLite · Requests/BeautifulSoup · React · TypeScript · Vite
 
+![Scraper console dashboard](docs/dashboard.png)
+
 ### Features
 
 - Enable/disable scheduled scraping via API, no server access needed
