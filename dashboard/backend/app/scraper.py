@@ -17,7 +17,7 @@ def get_with_retry(url, max_attempts=3):
             response.raise_for_status()
             return response
         except requests.exceptions.RequestException as e:
-            logger.warning(f"Спроба {attempt} для {url} невдала: {e}")
+            logger.warning(f"Attempt {attempt} for {url} failed: {e}")
             if attempt == max_attempts:
                 raise
             time.sleep(2 ** attempt)

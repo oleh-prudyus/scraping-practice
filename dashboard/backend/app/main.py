@@ -51,7 +51,7 @@ def toggle(body: ToggleRequest):
 @app.post("/run")
 def trigger_run(background_tasks: BackgroundTasks):
     background_tasks.add_task(run_scrape_job)
-    return {"message": "Скрапінг запущено у фоні"}
+    return {"message": "Scrape started in background"}
 
 
 @app.get("/data")
@@ -74,4 +74,4 @@ def get_notifications():
 def set_notifications(body: NotificationsRequest):
     db.set_setting("telegram_token", body.telegram_token)
     db.set_setting("telegram_chat_id", body.telegram_chat_id)
-    return {"message": "Збережено"}
+    return {"message": "Saved"}
