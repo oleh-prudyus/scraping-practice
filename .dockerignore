@@ -1,0 +1,7 @@
+.venv/
+.git/
+.idea/
+output/
+credentials.json
+__pycache__/
+*.pyc
